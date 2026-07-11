@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Attributes Example</title>
+</head>
+<body id="home">
+
+    <header id="top" class="header" title="Website Header">
+        <h1 id="heading" class="title">HTML Global Attributes Demo</h1>
+    </header>
+
+    <nav id="navigation" class="menu">
+        <a href="#about" title="Go to About Section">About</a> |
+        <a href="#services" title="Go to Services Section">Services</a> |
+        <a href="#contact" title="Go to Contact Section">Contact</a>
+    </nav>
+
+    <main id="main-content">
+
+        <section
+            id="about"
+            class="section"
+            title="About Section"
+            lang="en"
+            dir="ltr"
+            hidden>
+            <h2>About</h2>
+            <p>This section is hidden because of the <code>hidden</code> attribute.</p>
+        </section>
+
+        <section
+            id="services"
+            class="section"
+            title="Services Section">
+
+            <h2>Services</h2>
+
+            <article
+                id="article1"
+                class="post"
+                contenteditable="true"
+                spellcheck="true"
+                tabindex="0">
+                <h3>Web Development</h3>
+                <p>
+                    You can edit this text because it uses
+                    <code>contenteditable="true"</code>.
+                </p>
+            </article>
+
+            <article
+                id="article2"
+                class="post"
+                draggable="true"
+                title="Drag this article">
+                <h3>Graphic Design</h3>
+                <p>This article can be dragged.</p>
+            </article>
+
+        </section>
+
+        <aside
+            id="sidebar"
+            class="sidebar"
+            accesskey="s"
+            title="Sidebar">
+            <h3>Quick Tip</h3>
+            <p>Press the browser's access key for "S" to focus here.</p>
+        </aside>
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <form>
+                <label for="name">Name:</label>
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter your name"
+                    autofocus
+                    tabindex="1">
+
+                <br><br>
+
+                <label for="message">Message:</label>
+                <textarea
+                    id="message"
+                    rows="4"
+                    cols="30"
+                    spellcheck="true"
+                    tabindex="2"></textarea>
+
+                <br><br>
+
+                <button
+                    type="submit"
+                    tabindex="3"
+                    title="Submit Form">
+                    Submit
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer
+        id="footer"
+        class="footer"
+        title="Footer Section">
+        <address>
+            Email: example@email.com
+        </address>
+
+        <p>&copy; 2026 HTML Global Attributes Demo</p>
+    </footer>
+
+</body>
+</html>
